@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Setup - CDN</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <h1>Welcome to jQuery</h1>
+    <script>
+        // Test jQuery setup
+        $(document).ready(function() {
+            console.log("jQuery is successfully loaded!");
+        });
+    </script>
+</body>
+</html>
+
+---------------------------------JQuery Syntax---------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <h1 id="main-title">Welcome</h1>
+    <button id="change-title">Change Title</button>
+
+    <script>
+        // jQuery Script
+        $(document).ready(function() {
+            $("#change-title").click(function() {
+                $("#main-title").text("Hello, jQuery!");
+            });
+        });
+    </script>
+
+</body>
+</html>
